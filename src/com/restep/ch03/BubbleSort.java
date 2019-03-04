@@ -2,22 +2,33 @@ package com.restep.ch03;
 
 /**
  * 冒泡排序
+ *
  * @author restep
  * @date 2019/3/4
  */
 public class BubbleSort {
     public static void main(String[] args) {
-        int[] arr = new int[10];
+        int[] arr = new int[20];
         arr[0] = 9;
-        arr[1] = 3;
+        arr[1] = 13;
         arr[2] = 0;
-        arr[3] = 8;
+        arr[3] = 18;
         arr[4] = 1;
-        arr[5] = 4;
-        arr[6] = 7;
-        arr[7] = 2;
-        arr[8] = 6;
+        arr[5] = 14;
+        arr[6] = 19;
+        arr[7] = 12;
+        arr[8] = 16;
         arr[9] = 5;
+        arr[10] = 17;
+        arr[11] = 3;
+        arr[12] = 10;
+        arr[13] = 8;
+        arr[14] = 11;
+        arr[15] = 4;
+        arr[16] = 7;
+        arr[17] = 2;
+        arr[18] = 6;
+        arr[19] = 15;
 
         System.out.print("未排序: ");
         for (int i = 0; i < arr.length; i++) {
