@@ -1,12 +1,11 @@
 package com.restep.ch06;
 
 /**
- * 合并两个有序数组
- *
+ * 合并两个有序数组 版本二
  * @author restep
  * @date 2019/3/6
  */
-public class MergeTest {
+public class MergeTest2 {
     public static void main(String[] args) {
         int[] aArr = new int[8];
         aArr[0] = 23;
@@ -29,7 +28,7 @@ public class MergeTest {
 
         int[] mergeArr = new int[aArr.length + bArr.length];
 
-        merge(0, 0, 0, aArr, bArr, mergeArr);
+        merge(aArr, bArr, mergeArr);
 
         for (int i = 0; i < mergeArr.length; i++) {
             System.out.print(mergeArr[i] + " ");
@@ -37,25 +36,40 @@ public class MergeTest {
         System.out.println();
     }
 
-    private static void merge(int aIndex, int bIndex, int mergeIndex, int[] aArr, int[] bArr, int[] mergeArr) {
-        //a数组已经取完 或者 a数组比b数组大  从b数组取值
-        while (bIndex < bArr.length && (aIndex == aArr.length || aArr[aIndex] >= bArr[bIndex])) {
+    private static void merge(int[] aArr, int[] bArr, int[] mergeArr) {
+        int aIndex = 0;
+        int bIndex = 0;
+        int mergeIndex = 0;
+
+        //两个数组都不为空
+        while (aIndex < aArr.length && bIndex < bArr.length) {
+            if (aArr[aIndex] < bArr[bIndex]) {
+                mergeArr[mergeIndex] = aArr[aIndex];
+
+                aIndex++;
+                mergeIndex++;
+            } else {
+                mergeArr[mergeIndex] = bArr[bIndex];
+
+                bIndex++;
+                mergeIndex++;
+            }
+        }
+
+        //a数组已经取完
+        while (bIndex < bArr.length) {
             mergeArr[mergeIndex] = bArr[bIndex];
 
             bIndex++;
             mergeIndex++;
         }
 
-        //b数组已经取完 或者 b数组比a数组小  从a数组取值
-        while (aIndex < aArr.length && (bIndex == bArr.length || aArr[aIndex] <= bArr[bIndex])) {
+        //b数组已经取完
+        while (aIndex < aArr.length) {
             mergeArr[mergeIndex] = aArr[aIndex];
 
             aIndex++;
             mergeIndex++;
-        }
-
-        if (mergeIndex != mergeArr.length) {
-            merge(aIndex, bIndex, mergeIndex, aArr, bArr, mergeArr);
         }
     }
 }
