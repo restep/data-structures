@@ -115,7 +115,7 @@ class DoublyLinkedList {
 
         while (current.dData != key) {
             current = current.next;
-            if (current == null) {
+            if (null == current) {
                 return false;
             }
         }
@@ -140,7 +140,7 @@ class DoublyLinkedList {
         Link current = first;
         while (current.dData != key) {
             current = current.next;
-            if (current == null) {
+            if (null == current) {
                 return null;
             }
         }

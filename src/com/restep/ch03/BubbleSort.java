@@ -36,7 +36,7 @@ public class BubbleSort {
         }
         System.out.println();
 
-        //总共需要比较9次
+        //总共需要比较arr.length-1次
         for (int i = 0; i < arr.length - 1; i++) {
             //每次把最大的数排到最右边
             for (int j = 0; j < arr.length - 1 - i; j++) {

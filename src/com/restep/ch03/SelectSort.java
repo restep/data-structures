@@ -38,7 +38,7 @@ public class SelectSort {
         }
         System.out.println();
         
-        //总共需要9次将最小的数交换到左边
+        //总共需要arr.length - 1次交换
         for (int i = 0; i < arr.length - 1; i++) {
             //记录最小的数的下标
             int min = i;

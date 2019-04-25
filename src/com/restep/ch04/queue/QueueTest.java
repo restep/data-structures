@@ -1,6 +1,8 @@
-package com.restep.ch04;
+package com.restep.ch04.queue;
 
 /**
+ * 队列
+ *
  * @author restep
  * @date 2019/3/5
  */
@@ -27,7 +29,6 @@ public class QueueTest {
             System.out.print(n);
             System.out.print(" ");
         }
-        System.out.println("");
     }
 }
 
@@ -38,8 +39,8 @@ class Queue {
     private int rear;
     private int nItems;
 
-    public Queue(int s) {
-        maxSize = s;
+    public Queue(int num) {
+        maxSize = num;
         queArray = new long[maxSize];
         front = 0;
         rear = -1;

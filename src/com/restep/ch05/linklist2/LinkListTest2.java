@@ -4,7 +4,7 @@ package com.restep.ch05.linklist2;
  * @author restep
  * @date 2019/3/5
  */
-public class LinkList2 {
+public class LinkListTest2 {
     public static void main(String[] args) {
         LinkList list = new LinkList();
 
@@ -64,7 +64,7 @@ class LinkList {
     public Link find(int key) {
         Link current = first;
         while (current.iData != key) {
-            if (current.next == null) {
+            if (null == current.next) {
                 return null;
             } else {
                 current = current.next;
@@ -78,7 +78,7 @@ class LinkList {
         Link current = first;
         Link previous = first;
         while (current.iData != key) {
-            if (current.next == null) {
+            if (null == current.next) {
                 return null;
             } else {
                 previous = current;

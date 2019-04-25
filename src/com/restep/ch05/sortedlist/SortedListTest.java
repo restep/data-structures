@@ -1,6 +1,8 @@
 package com.restep.ch05.sortedlist;
 
 /**
+ * 有序链表
+ *
  * @author restep
  * @date 2019/3/5
  */
@@ -45,7 +47,7 @@ class SortedList {
     }
 
     public boolean isEmpty() {
-        return (first == null);
+        return first == null;
     }
 
     public void insert(long key) {
@@ -58,7 +60,7 @@ class SortedList {
             current = current.next;
         }
 
-        if (previous == null) {
+        if (null == previous) {
             first = newLink;
         } else {
             previous.next = newLink;

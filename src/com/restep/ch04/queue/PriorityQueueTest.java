@@ -1,6 +1,8 @@
-package com.restep.ch04;
+package com.restep.ch04.queue;
 
 /**
+ * 优先级队列
+ *
  * @author restep
  * @date 2019/3/5
  */

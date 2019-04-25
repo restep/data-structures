@@ -4,6 +4,7 @@ package com.restep.ch03;
  * 插入排序
  * ---------------(移动到的位置)----------------(抽取的数字下标)
  * 抽取的数字插入向左移动到 没有数字比它大的位置
+ *
  * @author restep
  * @date 2019/3/4
  */
@@ -40,8 +41,8 @@ public class InsertSort2 {
         //从第二个开始抽取数字
         for (int i = 1; i < arr.length; i++) {
             //记录抽取的数字
-            int temp = arr[i];
             int index = i;
+            int temp = arr[index];
 
             while (index > 0 && temp < arr[index - 1]) {
                 arr[index] = arr[index - 1];

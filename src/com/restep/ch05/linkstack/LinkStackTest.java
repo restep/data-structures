@@ -1,6 +1,8 @@
 package com.restep.ch05.linkstack;
 
 /**
+ * 链表实现栈
+ *
  * @author restep
  * @date 2019/3/5
  */
@@ -46,7 +48,7 @@ class LinkList {
     }
 
     public boolean isEmpty() {
-        return (first == null);
+        return first == null;
     }
 
     public void insertFirst(long dd) {
@@ -87,7 +89,7 @@ class LinkStack {
     }
 
     public boolean isEmpty() {
-        return (theList.isEmpty());
+        return theList.isEmpty();
     }
 
     public void displayStack() {

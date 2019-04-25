@@ -1,4 +1,4 @@
-package com.restep.ch02.lowarray;
+package com.restep.ch02;
 
 /**
  * @author restep

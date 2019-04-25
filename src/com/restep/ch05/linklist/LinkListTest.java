@@ -1,6 +1,8 @@
 package com.restep.ch05.linklist;
 
 /**
+ * 链表
+ *
  * @author restep
  * @date 2019/3/5
  */
@@ -48,7 +50,7 @@ class LinkList {
     }
 
     public boolean isEmpty() {
-        return (first == null);
+        return first == null;
     }
 
     public void insertFirst(int id, double dd) {
@@ -66,10 +68,10 @@ class LinkList {
     public void displayList() {
         System.out.print("List (first-->last): ");
         Link current = first;
-        while (current != null) {
+        while (null != current) {
             current.displayLink();
             current = current.next;
         }
-        System.out.println("");
+        System.out.println();
     }
 }

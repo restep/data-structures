@@ -18,7 +18,6 @@ public class StackTest {
             long value = stack.pop();
             System.out.print(value + " ");
         }
-        System.out.println("");
     }
 }
 

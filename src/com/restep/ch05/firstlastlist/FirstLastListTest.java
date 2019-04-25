@@ -1,6 +1,8 @@
 package com.restep.ch05.firstlastlist;
 
 /**
+ * 双端链表
+ *
  * @author restep
  * @date 2019/3/5
  */

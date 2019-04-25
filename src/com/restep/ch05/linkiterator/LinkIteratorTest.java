@@ -1,10 +1,11 @@
-package com.retep.ch05.linkiterator;
+package com.restep.ch05.linkiterator;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
+ * 双向链表(不同于双端链表) 允许向前遍历
  * @author restep
  * @date 2019/3/5
  */
@@ -186,7 +187,7 @@ class ListIterator {
     public void insertBefore(long dd) {
         Link newLink = new Link(dd);
 
-        if (previous == null) {
+        if (null == previous) {
             newLink.next = ourList.getFirst();
             ourList.setFirst(newLink);
             reset();
@@ -210,6 +211,7 @@ class ListIterator {
                 current = current.next;
             }
         }
+
         return value;
     }
 }

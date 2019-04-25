@@ -1,6 +1,8 @@
 package com.restep.ch05.linkqueue;
 
 /**
+ * 链表实现队列
+ *
  * @author restep
  * @date 2019/3/5
  */
@@ -62,7 +64,7 @@ class FirstLastList {
 
     public long deleteFirst() {
         long temp = first.dData;
-        if (first.next == null) {
+        if (null == first.next) {
             last = null;
         }
         first = first.next;
@@ -72,7 +74,7 @@ class FirstLastList {
     public void displayList() {
         Link current = first;
 
-        while (current != null) {
+        while (null != current) {
             current.displayLink();
             current = current.next;
         }

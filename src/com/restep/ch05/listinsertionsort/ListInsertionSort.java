@@ -1,6 +1,8 @@
 package com.restep.ch05.listinsertionsort;
 
 /**
+ * 插入排序实现有序链表
+ *
  * @author restep
  * @date 2019/3/5
  */
