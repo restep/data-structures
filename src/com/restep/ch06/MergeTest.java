@@ -1,6 +1,7 @@
 package com.restep.ch06;
 
 /**
+ * 归并排序
  * 合并两个有序数组
  *
  * @author restep

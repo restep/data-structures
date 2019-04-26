@@ -1,7 +1,8 @@
 package com.restep.ch06;
 
 /**
- * 合并两个有序数组 版本二
+ * 归并排序 版本二
+ *
  * @author restep
  * @date 2019/3/6
  */
@@ -16,7 +17,6 @@ public class MergeTest2 {
         aArr[5] = 122;
         aArr[6] = 222;
         aArr[7] = 322;
-
 
         int[] bArr = new int[6];
         bArr[0] = 7;

@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
+ * 字母组合
+ *
  * @author restep
  * @date 2019/3/6
  */
@@ -27,7 +29,6 @@ public class AnagramTest {
     }
 
     public static void doAnagram(int newSize) {
-        int limit;
         if (newSize == 1) {
             return;
         }
